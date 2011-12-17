@@ -1,4 +1,4 @@
-<h1>Listing articles</h1>
+<h1>みんなのべんとう</h1>
 
 <table>
   <tr>
@@ -15,13 +15,14 @@
     <td><%= article.user_id %></td>
     <td><%= article.image_name %></td>
     <td><%= article.description %></td>
-    <td><%= link_to 'Show', article %></td>
-    <td><%= link_to 'Edit', edit_article_path(article) %></td>
-    <td><%= link_to 'Destroy', article, confirm: 'Are you sure?', method: :delete %></td>
+    <td><%= link_to '見る', article %></td>
+    <td><%= link_to '編集', edit_article_path(article) %></td>
+    <td><%= link_to '削除', article, confirm: 'マジで消すの?', method: :delete %></td>
   </tr>
 <% end %>
 </table>
 
 <br />
 
-<%= link_to 'New Article', new_article_path %>
+<%= link_to 'おべんとうを投稿', new_article_path %>
+
